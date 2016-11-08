@@ -55,21 +55,21 @@ public class MainActivity extends AppCompatActivity {
         beaconManager = new BeaconManager(this);
 
         region0 = new Region("ranged region",
-                UUID.fromString("a75fa152-a904-4502-8ea8-192f8fcfee6a"), 37491, 43355);
+                UUID.fromString("a75fa152-a904-4502-8ea8-192f8fcfee6a"), 37491, 43355); //1
         region1 = new Region("ranged region",
-                UUID.fromString("9795a656-a244-47f5-b8ab-a24cf9728976"), 12703, 41115);
+                UUID.fromString("9795a656-a244-47f5-b8ab-a24cf9728976"), 12703, 41115); //15
         region2 = new Region("ranged region",
-                UUID.fromString("58deb431-0387-4aff-b04d-bf773f2409cc"), 918, 44776);
+                UUID.fromString("58deb431-0387-4aff-b04d-bf773f2409cc"), 918, 44776); //2
         region3 = new Region("ranged region",
-                UUID.fromString("e14f37ee-cd9c-41a1-b145-134570f9a8e8"), 41600, 6645);
+                UUID.fromString("e14f37ee-cd9c-41a1-b145-134570f9a8e8"), 41600, 6645); //3
         region4 = new Region("ranged region",
-                UUID.fromString("b6fc3980-846c-4f48-bfc5-2b2e0ca2d702"), 2143, 20816);
+                UUID.fromString("b6fc3980-846c-4f48-bfc5-2b2e0ca2d702"), 2143, 20816); //4
         region5 = new Region("ranged region",
-                UUID.fromString("9aa9bca6-b207-41f5-a076-d294c9b374db"), 49523, 36217);
+                UUID.fromString("9aa9bca6-b207-41f5-a076-d294c9b374db"), 49523, 36217); //5
         region6 = new Region("ranged region",
-                UUID.fromString("21f158a6-a083-4020-9b40-8cd34380ffc3"), 16355, 40884);
+                UUID.fromString("21f158a6-a083-4020-9b40-8cd34380ffc3"), 16355, 40884); //6
         region7 = new Region("ranged region",
-                UUID.fromString("7691f1bd-284f-439d-8b1a-d223f0249b9b"), 30448, 19478);
+                UUID.fromString("7691f1bd-284f-439d-8b1a-d223f0249b9b"), 30448, 19478); //7
 
         beaconManager.setRangingListener(new BeaconManager.RangingListener() {
             @Override
