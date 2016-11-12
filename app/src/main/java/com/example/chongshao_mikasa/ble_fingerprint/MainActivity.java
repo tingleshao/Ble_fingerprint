@@ -58,6 +58,8 @@ public class MainActivity extends ARActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mainLayout = (FrameLayout)this.findViewById(R.id.mainLayout);
+
         beacon0 = (TextView)this.findViewById(R.id.beacon0);
         beacon1 = (TextView)this.findViewById(R.id.beacon1);
         beacon2 = (TextView)this.findViewById(R.id.beacon2);
@@ -238,7 +240,8 @@ public class MainActivity extends ARActivity {
 
     @Override
     protected FrameLayout supplyFrameLayout() {
-        return (FrameLayout)this.findViewById(R.id.mainLayout);
+     //   return (FrameLayout)this.findViewById(R.id.mainLayout);
+        return this.mainLayout;
     }
 
     private boolean checkCameraPermission() {
