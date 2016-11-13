@@ -46,10 +46,16 @@
  *  Author(s): Julian Looser, Philip Lamb
  */
 
-#include <AR/gsub_es.h>
-#include <Eden/glm.h>
+//#include <AR/gsub_es.h>
+#include "include/AR/gsub.h"
+//#include <Eden/glm.h>
+#include "include/Eden/glm.h"
+
 #include <jni.h>
-#include <ARWrapper/ARToolKitWrapperExportedAPI.h>
+//#include <ARWrapper/ARToolKitWrapperExportedAPI.h>
+#include "include/ARWrapper/ARToolKitWrapperExportedAPI.h"
+#include "include/glStateCache.h"
+
 #include <unistd.h> // chdir()
 #include <android/log.h>
 
