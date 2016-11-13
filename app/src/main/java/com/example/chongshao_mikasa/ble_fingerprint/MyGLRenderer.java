@@ -12,7 +12,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class MyGLRenderer implements GLSurfaceView.Renderer {
     private Triangle triangle;
-  //  private Square square;
+
+    private Rectangle rect;
     private float mAngle;
 
     @Override
@@ -20,8 +21,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // Set the background frame color
         gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-        triangle = new Triangle();
+    //    triangle = new Triangle();
     //    square = new Square();
+        rect = new Rectangle();
     }
     @Override
     public void onSurfaceChanged(GL10 gl, int width, int height) {
@@ -58,7 +60,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         //    float angle = 0.090f * ((int) time);
         gl.glRotatef(mAngle, 0.0f, 0.0f, 1.0f);
         // Draw triangle
-        triangle.draw(gl);
+   //     triangle.draw(gl);
+        rect.draw(gl);
     }
 
 //    public static int loadShader(int type, String shaderCode){
