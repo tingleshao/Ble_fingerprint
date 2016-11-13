@@ -51,7 +51,8 @@ public class MainActivity extends ARActivity {
     TextView beacon6;
     TextView beacon7;
 
-    private SimpleRenderer simpleRenderer = new SimpleRenderer();
+   // private SimpleRenderer simpleRenderer = new SimpleRenderer();
+    private SimpleNativeRenderer simpleRenderer = new SimpleNativeRenderer();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -151,7 +152,7 @@ public class MainActivity extends ARActivity {
         // When the screen is tapped, inform the renderer and vibrate the phone
         mainLayout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                simpleRenderer.click();
+         //       simpleRenderer.click();
                 Vibrator vib = (Vibrator) getSystemService(VIBRATOR_SERVICE);
                 vib.vibrate(40);
             }
